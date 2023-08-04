@@ -16,6 +16,10 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet" type="text/css">
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="static/style.css" rel="stylesheet" />
     </head>
@@ -30,22 +34,40 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">상품</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">인테리어</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">질문게시판</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">인테리어</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">상품</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">질문게시판</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">대명건재</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
+        <header class="masthead bg-primary" id="about">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-target="#carouselExampleFade" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-target="#carouselExampleFade" data-slide-to="1" class="active" aria-label="Slide 2"></button>
+                    <button type="button" data-target="#carouselExampleFade" data-slide-to="2" class="active" aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                    {% for object in carousel %}
+                    <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
+                        <img src="{{object.image.url}}" style="height:650px;" class="d-block w-100" alt="...">
+                        <div class="carousel-fade d-none d-md-block">
+                            <h1>{{object.title}}</h1>
+                            <h3>{{object.sub_title}}</h3>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -117,7 +139,7 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section bg-primary text-white mb-0" id="contact">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white">회사 소개</h2>

@@ -55,7 +55,7 @@
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-font-monospace: 'Noto Sans KR', sans-serif;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
@@ -7493,6 +7493,8 @@ textarea.form-control-lg {
   order: 6 !important;
 }
 
+/* margin(m) & padding(p) */
+
 .m-0 {
   margin: 0 !important;
 }
@@ -8298,6 +8300,8 @@ textarea.form-control-lg {
 .invisible {
   visibility: hidden !important;
 }
+
+/* 부트스트랩 그리드 시스템 (sm,md,lg,xl,xxl) */
 
 @media (min-width: 576px) {
   .float-sm-start {
@@ -10909,13 +10913,13 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #94a5b0;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #94a5b0;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10938,11 +10942,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: #94a5b0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #94a5b0;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -10974,30 +10978,49 @@ html {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
-.masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
-}
-.masthead .masthead-subheading {
-  font-size: 1.25rem;
-}
-.masthead .masthead-avatar {
-  width: 15rem;
-}
+
 
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
   }
-  .masthead .masthead-heading {
+  .masthead h1 {
     font-size: 4rem;
     line-height: 3.5rem;
   }
-  .masthead .masthead-subheading {
+  .masthead h3 {
     font-size: 1.5rem;
   }
 }
+
+/* 인테리어 컬렉션 슬라이더 */
+.carousel-inner .carousel-fade{
+    padding-bottom: 170px;
+}
+.carousel-inner .carousel-fade h1{
+    font-size: 52px;
+    text-align: center;
+}
+.carousel-inner .carousel-fade h3{
+    text-align: center;
+}
+.carousel-inner .carousel-fade .button{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #3489bd;
+    text-decoration: none;
+    background-color: #3489bd;
+    color: #fff;
+}
+
+
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -11012,7 +11035,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(108, 117, 125, 0.9);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11022,7 +11045,7 @@ html {
 }
 
 .portfolio-modal .btn-close {
-  color: #1abc9c;
+  color: #94a5b0;
   font-size: 2rem;
   padding: 1rem;
 }
@@ -11047,3 +11070,5 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+
