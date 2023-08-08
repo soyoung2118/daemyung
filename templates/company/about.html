@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>대명건재</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet" type="text/css">
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <!-- 네이버 지도 -->
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=o6izxoxk0j"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/style.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">대명건재</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    메뉴
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">회사 소개</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">인테리어</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">상품</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">질문게시판</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="container">
+            <section class="about_brand" id="about_brand">
+                <div class="page-title">
+                    <h3> 오시는 길 </h3>
+                </div>
+                <div class="inset-content">
+                    <img class="img-fluid" src="{% static 'daemyung_photo.jpg' %}" alt="..." />
+                </div>
+                <div class="content">
+                    <h4>
+                       주소안내
+                    </h4>
+                    <div class="location-box">
+                        <ul>
+                            <li class="addr">
+                                <p>
+                                    "24274 강원 춘천시 중앙로68번길 15"
+                                    <br>
+                                    "Daemyung, 15, Jungang-ro 68beon-gil, Chuncheon-si, Gangwon-do, 24274, Republic of Korea"
+                                </p>
+                            </li>
+                            <li class="tel">
+                                <p>
+                                    033-254-2644
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map-box" id="map" style="width:100%;height:400px;">
+                        <script>
+                        var mapOptions = {
+                            center: new naver.maps.LatLng(37.8803, 127.7256),
+                            zoom: 19
+                        };
+                        var map = new naver.maps.Map('map', mapOptions);
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </div>

@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('pybo/', include('pybo.urls')),
     path('common/', include('common.urls')),
+    path('about/', include('company.urls')),
     path('', include('main.urls')),  # / 페이지에 해당하는 urlpatterns
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # media 경로 추가

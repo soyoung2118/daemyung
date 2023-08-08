@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'common.apps.CommonConfig',
     'pybo.apps.PyboConfig',
     'main.apps.MainConfig',
+    'company.apps.CompanyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

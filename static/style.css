@@ -10843,13 +10843,15 @@ html {
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
+    margin-top: 4rem;
     font-size: 3rem;
     line-height: 2.5rem;
   }
 }
 
 .divider-custom {
-  margin: 1.25rem 0 1.5rem;
+  margin-top: 2.3rem;
+  margin-bottom: 5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10975,35 +10977,81 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+    height: auto;
 }
 
+.masthead .carousel-inner img {
+    position: relative;
+    filter: brightness(80%);
+
+}
+
+.masthead .carousel-inner h1 {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    /*요소의 높이/너비의 반(50%)만큼 위/왼쪽으로 이동*/
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.masthead .carousel-inner h3 {
+    position: absolute;
+    text-align: center;
+    top: 53%;
+    left: 50%;
+    /*요소의 높이/너비의 반(50%)만큼 위/왼쪽으로 이동*/
+    transform: translate(-50%, -50%);
+    color: white;
+
+}
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    height: auto;
   }
+
+  .masthead img {
+    position: relative;
+    filter: brightness(80%);
+  }
+
   .masthead h1 {
     font-size: 4rem;
     line-height: 3.5rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    /*요소의 높이/너비의 반(50%)만큼 위/왼쪽으로 이동*/
+    transform: translate(-50%, -50%);
+    color: white;
+
   }
   .masthead h3 {
     font-size: 1.5rem;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    /*요소의 높이/너비의 반(50%)만큼 위/왼쪽으로 이동*/
+    transform: translate(-50%, -50%);
+    color: white;
+
   }
 }
 
 /* 인테리어 컬렉션 슬라이더 */
 .carousel-inner .carousel-fade{
-    padding-bottom: 170px;
+    padding-bottom: 0px;
 }
 .carousel-inner .carousel-fade h1{
     font-size: 52px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .carousel-inner .carousel-fade h3{
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .carousel-inner .carousel-fade .button{
     font-weight: 500;
@@ -11018,7 +11066,6 @@ html {
     background-color: #3489bd;
     color: #fff;
 }
-
 
 
 .portfolio .portfolio-item {
@@ -11067,8 +11114,25 @@ html {
   color: #fff;
 }
 
+.footer p {
+    text-align: center;
+}
+
 .copyright {
   background-color: #1a252f;
 }
 
+
+
+
+/* 회사 소개 */
+.about-brand {
+    position: relative;
+}
+
+.inset-content {
+    padding: 120px 0 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
