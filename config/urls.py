@@ -24,6 +24,7 @@ urlpatterns = [
     path('common/', include('common.urls')),
     path('about/', include('company.urls')),
     path('', include('main.urls')),  # / 페이지에 해당하는 urlpatterns
+    path('interior/', include('interior.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # media 경로 추가
 

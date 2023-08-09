@@ -34,10 +34,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">회사 소개</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{% url 'company:about' %}">오시는 길</a></li>
                         <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">인테리어</a></li>
                         <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">상품</a></li>
-                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">질문게시판</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{% url 'pybo:index' %}">질문게시판</a></li>
                     </ul>
                 </div>
             </div>
@@ -134,21 +134,7 @@
                 </div>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="contact">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">회사 소개</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-12 ms-auto text-center"><p class="lead">회사 위치 : 강원도 춘천시 중앙로 68번길 15 &nbsp;&nbsp;&nbsp; 전화번호 : 033-254-2644</p></div>
-                </div>
-            </div>
-        </section>
+
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
