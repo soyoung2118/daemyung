@@ -10,6 +10,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10904,7 +10906,7 @@ html {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   background-color: #000;/* 까만색(0,0,0) */
-  opacity:0.5; /* 20% 불투명도 */
+  opacity:0.75; /* 20% 불투명도 */
 }
 #mainNav .navbar-brand {
   color: #fff;
@@ -11011,6 +11013,7 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
+    margin-top: 6.5rem;
     height: auto;
   }
 
@@ -11069,14 +11072,21 @@ html {
     color: #fff;
 }
 
+.portfolio {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
 
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
   display: block;
-  max-width: 25rem;
+  max-width: 35rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  margin-top: 2.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
@@ -11112,7 +11122,7 @@ html {
 .footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #2c3e50;
+  background-color: #1a252f;
   color: #fff;
 }
 
@@ -11122,6 +11132,7 @@ html {
 
 .copyright {
   background-color: #1a252f;
+  border-top: 1px solid rgba(247, 247, 247, 0.1);
 }
 
 
@@ -11190,10 +11201,69 @@ html {
     margin-left: 10px;
 }
 
+
 /* question_list */
 .table .thead-dark th {
     color:#fff;
     background-color:#94a5b0;
     background-color: rgba(148, 165, 176, 0.8);
     border-color:#454d55
+}
+
+
+/* interior */
+.content-section {
+    margin-top: 6.5rem;
+    position: absolute;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+
+.interior_list .wrap-interior .fade-left {
+    display: flex;
+    float: left;
+}
+
+.interior_list .wrap-interior .fade-right {
+    display: flex;
+    float: right;
+}
+
+
+.interior_list .wrap-interior .fade-left .int_image {
+    float: left;
+    min-height: 780px;
+    width: 90%;
+    margin-left:0;
+}
+
+.interior_list .wrap-interior .fade-left .int_text {
+    padding-left: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top:20%;
+}
+
+.interior_list .wrap-interior .fade-right .int_image {
+    float: right;
+    min-height: 780px;
+    width: 90%;
+    margin-right:0;
+}
+
+.interior_list .wrap-interior .fade-right .int_text {
+    padding-right:1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top:20%;
+
+}
+
+
+.interior_list .wrap-interior .int_image img {
+    width: 1200px;
+    height: 780px
 }

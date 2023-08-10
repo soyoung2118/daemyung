@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>대명건재</title>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet" type="text/css">
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <!-- Animation on scroll -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'main:main' %}">대명건재</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    메뉴
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{% url 'company:about' %}">오시는 길</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{% url 'interior:interior' %}">인테리어</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">상품</a></li>
+                        <li class="nav-item mx-1 mx-lg-3"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{% url 'pybo:index' %}">질문게시판</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="content-section">
+            <div class="interior_list">
+                <div class="wrap-interior wrap01">
+                    <div class="inset-content fade-left" data-aos="fade-right">
+                        <div class="int_image">
+                            <img src="{% static 'int_baum.png' %}" alt="" />
+                        </div>
+                        <div class="int_text">
+                            <h1>
+                                NATURAL BAUM
+                            </h1>
+                            <p>
+                                나무 질감과 컬러로 자연의 고급스러움을 극대화합니다.
+                                <br>
+                                숨은 공간을 활용할 수 있는 수납 가구로 효율 높게 욕실 이용이 가능합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-interior wrap02">
+                    <div class="inset-content fade-right" data-aos="fade-left">
+                        <div class="int_text">
+                            <h1>
+                                PHANTOM SQUARE
+                            </h1>
+                            <p>
+                                천연 대리석 패턴과 블랙, 네이비 컬러의 조화로 깔끔함과 웅장함을 더했습니다.
+                                <br>
+                                깔끔한 색상의 가구와 트렌디한 타일의 매치로 공간의 고급스러움을 극대화하며 욕실을 특별하게 만들어 줍니다.
+                            </p>
+                        </div>
+                        <div class="int_image">
+                            <img src="{% static 'int_phantom.png' %}" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-interior wrap03">
+                    <div class="inset-content fade-left" data-aos="fade-right">
+                        <div class="int_image">
+                            <img src="{% static 'int_luna.png' %}" alt="" />
+                        </div>
+                        <div class="int_text">
+                            <h1>
+                                LUNA GLOW
+                            </h1>
+                            <p>
+                                수납 가구에 몰딩 디테일이 가미되어 클래식과 모던함이 공존하는 매력적인 공간을 선사합니다.
+                                <br>
+                                컬러의 조화로움은 우리 집 욕실을 힐링의 장소로 변화시킵니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-interior wrap04">
+                    <div class="inset-content fade-right" data-aos="fade-left">
+                        <div class="int_text">
+                            <h1>
+                                SILHOUETTE BLUE
+                            </h1>
+                            <p>
+                                부드러운 블루 색감의 싱그러운 느낌이 가득한 실루엣 블루는 가장 완벽해진 수납 가구로 새로운 방식의 공간을 제안합니다.
+                                <br>
+                                자신만의 공간을 채우고 취향을 담을 수 있습니다.
+                            </p>
+                        </div>
+                        <div class="int_image">
+                            <img src="{% static 'int_blue.png' %}" alt="" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="wrap-interior wrap05">
+                    <div class="inset-content fade-left" data-aos="fade-right">
+                        <div class="int_image">
+                            <img src="{% static 'int_kelly.png' %}" alt="" />
+                        </div>
+                        <div class="int_text">
+                            <h1>
+                                GRACE KELLY
+                            </h1>
+                            <p>
+                                팔각 거울, 육각 바닥 타일, 몰딩을 덧댄 가구의 섬세한 디테일이 우아한 분위기를 연출합니다.
+                                <br>
+                                육각 타일을 이용한 디자인으로 러블리한 파우더룸 스타일의 욕실을 만들 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-interior wrap06">
+                    <div class="inset-content fade-right" data-aos="fade-left">
+                        <div class="int_text">
+                            <h1>
+                                LIBRE ASH
+                            </h1>
+                            <p>
+                                인테리어, 수납 취향에 따라 다양한 스타일의 상부장 선택이 가능합니다.
+                                <br>
+                                공간의 한계를 넘어 나만의 수납 스타일을 그대로 담아낼 수 있는 다양한 가구들로 맞춤 욕실 공간을 만들 수 있습니다.
+                            </p>
+                        </div>
+                        <div class="int_image">
+                            <img src="{% static 'int_libre.png' %}" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-interior wrap07">
+                    <div class="inset-content fade-left" data-aos="fade-right">
+                        <div class="int_image">
+                            <img src="{% static 'int_bella.png' %}" alt="" />
+                        </div>
+                        <div class="int_text">
+                            <h1>
+                                BELLA WOODY
+                            </h1>
+                            <p>
+                                분리 설치가 가능한 오픈형 선반과 블루 포인트 컬러의 수납 가구, 자연이 느껴지는 우드톤의 상·하부장으로 구성되어 있습니다.
+                                <br>
+                                세련되면서도 힐링이 가능한 공간으로 만들어 줍니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+        </script>
+    </body>
+</html>
