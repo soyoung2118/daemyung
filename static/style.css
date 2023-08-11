@@ -11120,6 +11120,8 @@ html {
 }
 
 .footer {
+
+  width:100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #1a252f;
@@ -11131,6 +11133,7 @@ html {
 }
 
 .copyright {
+
   background-color: #1a252f;
   border-top: 1px solid rgba(247, 247, 247, 0.1);
 }
@@ -11266,4 +11269,41 @@ html {
 .interior_list .wrap-interior .int_image img {
     width: 1200px;
     height: 780px
+}
+
+
+/* category */
+.product_list {
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+}
+
+.container #products {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.my_bottom_margin {
+    padding-left: 4.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+#page-top {
+    min-height: calc(100% - 8rem);
+}
+
+.login_nav {
+    float: right;
+    right: -110px;
+}
+
+
+.login_nav .nav-item {
+    color: white;
+    list-style-type: none;
+    font-size:15px;
 }
